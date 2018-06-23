@@ -24,7 +24,13 @@ const Test = (props) => {
 };
 
 const FallBack = (props) => {
-  return <div>URL Not Found</div>;
+  return (
+    <div>
+      URL Not Found, Have a counter as consolation.
+      <Counter />
+      <Controls />
+    </div>
+  );
 };
 
 const Nav = (props) => {
